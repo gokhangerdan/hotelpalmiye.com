@@ -16,10 +16,12 @@ $(document).ready(function() {
   });
 
   $('.diamond, .booking-form').mouseover(function(event){
+    if($(window).width() > 1100) {
     $('.diamond').css("opacity", "0.9");
-    $('.booking-form').css("opacity", "1");
+    $('.booking-form').css("opacity", "1");}
   }).mouseout(function(event){
+    if($(window).width() > 1100) {
     $('.diamond').css("opacity", "0.3");
-    $('.booking-form').css("opacity", "0");
+    $('.booking-form').css("opacity", "0");}
   });
 });

@@ -71,7 +71,7 @@ body {
   box-shadow: 0px 0px 20px 3px rgba(17, 17, 17, 0.2);
   transition: all 0.5s ease-in-out;
 }
-@media (max-width: 450px) {
+@media (max-width: 1100px) {
   .diamond {
     display: none;
   }
@@ -281,7 +281,7 @@ label {
   top: 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1600px) {
   .overlay p{
     font-size: 50px;
     font-weight: 800;
