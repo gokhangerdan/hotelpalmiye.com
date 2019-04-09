@@ -39,3 +39,245 @@ img {vertical-align: middle;}
 .checked {
     color: orange;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #8dfee1;
+  color: #888;
+  font: "Open Sans";
+  font-size: 100%;
+}
+@media (max-width: 450px) {
+  body {
+    background: #ebf3f5;
+    overflow: scroll;
+  }
+}
+
+.diamond {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  height: 550px;
+  width: 550px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 3px rgba(17, 17, 17, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 450px) {
+  .diamond {
+    display: none;
+  }
+}
+
+.form-wrap {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1em;
+  width: 350px;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 450px) {
+  .form-wrap {
+    width: 80%;
+  }
+}
+.form-wrap form {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 15px 10px;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.1);
+  width: 100%;
+  height: 45px;
+  outline: #8dfee1;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+#guestNo {
+  width: 80px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+input[type="date"]:webkit-inner-spin-button {
+  display: none;
+}
+
+label {
+  padding-bottom: 10px;
+  display: inline;
+  float: left;
+}
+
+.counter-btn {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  text-align: top;
+  vertical-align: top;
+  font-size: 1.5em;
+  font-weight: 300;
+  width: 40px;
+  background: #fff;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.1);
+  cursor: pointer;
+  outline: none;
+}
+.counter-btn:nth-child(2) {
+  float: right;
+}
+.counter-btn:hover {
+  box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.3);
+}
+
+.guests {
+  margin: 10px;
+}
+
+.dates .arrival {
+  display: inline-block;
+  float: left;
+  width: 45%;
+}
+.dates .departure {
+  display: inline-block;
+  float: right;
+  width: 45%;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  margin: 20px auto;
+  width: 100%;
+  height: 45px;
+  display: block;
+  background: #fea88d;
+  color: #fff;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.1);
+  border-radius: 3px;
+  outline: none;
+}
+.btn:hover {
+  background: #fe9574;
+}
+
+
+
+.overlay_2 {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #333333;
+}
+
+.overlay{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.overlay p{
+  font-size: 300px;
+  font-weight: 800;
+}
+.screen{
+  color: #333333;
+  text-transform: uppercase;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.myBtn{
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.myBtnTR{
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.myBtnEN{
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.myBtn{
+  display: block;
+  padding: 24px 48px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 6px;
+  color: #333333;
+  background: none;
+  border: 2px solid #333333;
+  outline: none;
+  overflow: hidden;
+  z-index: 1;
+  cursor: crosshair;
+  transition: .5s ease-out;
+}
+
+.myBtn:hover{
+  color: #f5f5f5;
+  cursor: crosshair;
+}
+
+.myBtn:before{
+  content: '';
+  position: absolute;
+  background: #333333;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  transition: top .5s ease-out;
+}
+
+.myBtn:hover:before{
+  top: 0;
+}
