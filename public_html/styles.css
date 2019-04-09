@@ -60,7 +60,7 @@ body {
 
 .diamond {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
@@ -80,7 +80,7 @@ body {
 .form-wrap {
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -187,8 +187,6 @@ label {
   background: #fe9574;
 }
 
-
-
 .overlay_2 {
   z-index: 0;
   position: absolute;
@@ -206,9 +204,10 @@ label {
 }
 
 .overlay p{
-  font-size: 300px;
+  font-size: 200px;
   font-weight: 800;
 }
+
 .screen{
   color: #333333;
   text-transform: uppercase;
@@ -280,4 +279,21 @@ label {
 
 .myBtn:hover:before{
   top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .overlay p{
+    font-size: 50px;
+    font-weight: 800;
+  }
+
+  .myBtnTR{
+    top: 45%;
+    left: 50%;
+  }
+  
+  .myBtnEN{
+    top: 60%;
+    left: 50%;
+  }
 }
